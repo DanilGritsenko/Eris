@@ -66,7 +66,7 @@
 	name = "Noble"
 	desc = "You are a descendant of a long-lasting family, being part of a lineage of high status that can be traced back to the early civilization of your domain. \
 			What legacy will you build? \
-			Start with an heirloom weapon, higher chance to be on contractor contracts and removed sanity cap. Stay clear of filth and danger."
+			Start with an heirloom weapon, higher chance to be on contractor contracts and removed willpower cap. Stay clear of filth and danger."
 			
 	perks = list(PERK_NOBLE)
 
@@ -103,7 +103,7 @@
 	desc = "You are the bottom of society. The dirt and grime on the heel of a boot. You had one chance. You took it. \
 			You never knew your parents and were lucky enough to learn how to read, and that, in time, landed you a position on this ship. \
 			Would you still choose to be part of this journey if you knew what it meant? Will you leave a mark or be forgotten forever? \
-			You cannot play command roles. Additionally, you have the ability to have a name without a last name and have an increased sanity pool."
+			You cannot play command roles. Additionally, you have the ability to have a name without a last name and have an increased willpower pool."
 
 	restricted_jobs = list(/datum/job/captain, /datum/job/hop, /datum/job/chaplain, /datum/job/merchant, /datum/job/cmo, /datum/job/rd, /datum/job/ihc)
 	restricted_depts = IRONHAMMER | MEDICAL | SCIENCE

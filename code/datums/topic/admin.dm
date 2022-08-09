@@ -815,7 +815,7 @@
 		to_chat(usr, "This can only be used on instances of type /human.")
 		return
 
-	var/datum/breakdown/B = input("What breakdown will [key_name(H)] suffer from?", "Sanity Breakdown") as null | anything in subtypesof(/datum/breakdown)
+	var/datum/breakdown/B = input("What breakdown will [key_name(H)] suffer from?", "Willpower Breakdown") as null | anything in subtypesof(/datum/breakdown)
 	if(!B)
 		return
 	B = new B(H.sanity)

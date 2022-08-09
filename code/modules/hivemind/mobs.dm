@@ -22,6 +22,7 @@
 	bad_type = /mob/living/simple_animal/hostile/hivemind
 	spawn_tags = SPAWN_TAG_MOB_HIVEMIND
 	rarity_value = 20
+
 	mob_classification = CLASSIFICATION_SYNTHETIC
 
 	var/malfunction_chance = 5
@@ -35,7 +36,6 @@
 
 /mob/living/simple_animal/hostile/hivemind/New()
 	. = ..()
-	tts_seed = prob(75) ? "Robot_1" : "Female_9"
 	if(!(real_name in GLOB.hivemind_mobs))
 		GLOB.hivemind_mobs.Add(real_name)
 	GLOB.hivemind_mobs[real_name]++

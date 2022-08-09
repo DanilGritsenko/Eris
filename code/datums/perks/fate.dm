@@ -38,8 +38,8 @@
 /datum/perk/fate/nihilist
 	name = "Nihilist"
 	desc = 	"You simply ran out of fucks to give at some point in your life. \
-			This increases chance of positive breakdowns by 10% and negative breakdowns by 20%. Seeing someone die has a random effect on you: \
-			sometimes you won’t take any sanity loss and you can even gain back sanity, or get a boost to your cognition."
+			This increases chance of positive curses by 10% and negative curses by 20%. Seeing someone die has a random effect on you: \
+			sometimes you won’t suffer any willpower loss and you can even gain willpower, or get a boost to your cognition."
 	icon_state = "eye" //https://game-icons.net/1x1/lorc/tear-tracks.html
 
 /datum/perk/fate/nihilist/assign(mob/living/carbon/human/H)
@@ -59,8 +59,8 @@
 	icon_state = "moralist" //https://game-icons.net/
 	desc = "A day may come when the courage of men fails, when we forsake our friends and break all bonds of fellowship. \
 			But it is not this day. This day you fight! \
-			Your Insight gain is faster when you are around sane people and they will recover sanity when around you. \
-			When you are around people that are low on health or sanity, you will take sanity damage."
+			Your Insight gain is faster when you are around stalwart people and they will recover willpower when around you. \
+			When you are around people that are low on health or will, you will take willpower damage."
 
 /datum/perk/fate/drug_addict
 	name = "Drug Addict"
@@ -122,7 +122,7 @@
 	name = "Noble"
 	icon_state = "family" //https://game-icons.net
 	desc = "You are a descendant of a long-lasting family, bearing a name of high status that can be traced back to the early civilization of your domain. \
-			Start with an heirloom weapon, higher chance to be on contractor contracts and removed sanity cap. Stay clear of filth and danger."
+			Start with an heirloom weapon, higher chance to be on contractor contracts and removed willpower cap. Stay clear of filth and danger."
 
 /datum/perk/fate/noble/assign(mob/living/carbon/human/H)
 	if(!..())
@@ -181,23 +181,23 @@
 /datum/perk/fate/rat
 	name = "Rat"
 	desc = "For all you know, taking what isn't yours is what you were best at. Be that roguery, theft or murder. It’s all the same no matter how you name it, after all. \
-			You start with a +10 to Mechanical stat and -10 to Vigilance. You will have a -10 to overall sanity health, meaning you will incur a breakdown faster than most. \
+			You start with a +10 to Mechanical stat and -10 to Vigilance. You will have a -25 to overall willpower health, meaning you will incur a curse faster than most. \
 			Additionally you have more quiet footsteps and a chance to not trigger traps on the ground."
 	icon_state = "rat" //https://game-icons.net/
 
 /datum/perk/fate/rat/assign(mob/living/carbon/human/H)
 	if(..())
-		holder.sanity.max_level -= 10
+		holder.sanity.max_level -= 25
 
 /datum/perk/fate/rat/remove()
 	if(holder)
-		holder.sanity.max_level += 10
+		holder.sanity.max_level += 25
 	..()
 
 /datum/perk/fate/rejected_genius
 	name = "Rejected Genius"
 	desc = "You see the world in different shapes and colors. \
-			Your sanity loss cap is removed, so stay clear of corpses or filth. You have less maximum sanity and no chance to have positive breakdowns. \
+			Your willpower loss cap is removed, so stay clear of corpses or filth. You have less maximum willpower and no chance to have positive curse. \
 			As tradeoff, you have 50% faster insight gain."
 	icon_state = "knowledge" //https://game-icons.net/
 
@@ -206,14 +206,14 @@
 		holder.sanity.environment_cap_coeff -= 1
 		holder.sanity.positive_prob_multiplier -= 1
 		holder.sanity.insight_passive_gain_multiplier *= 1.5
-		holder.sanity.max_level -= 20
+		holder.sanity.max_level -= 35
 
 /datum/perk/fate/rejected_genius/remove()
 	if(holder)
 		holder.sanity.environment_cap_coeff += 1
 		holder.sanity.positive_prob_multiplier += 1
 		holder.sanity.insight_passive_gain_multiplier /= 1.5
-		holder.sanity.max_level += 20
+		holder.sanity.max_level += 35
 	..()
 
 /datum/perk/fate/oborin_syndrome
@@ -221,11 +221,11 @@
 	icon_state = "prism" //https://game-icons.net/1x1/delapouite/prism.html
 	desc = "A condition manifested at some recent point in human history. \
 			It’s origin and prevalence are unknown, but it is speculated to be a psionic phenomenom.\
-			Your sanity pool is higher than that of others at the cost of the colors of the world."
+			Your willpower pool is higher than that of others at the cost of the colors of the world."
 
 /datum/perk/fate/oborin_syndrome/assign(mob/living/carbon/human/H)
 	if(..())
-		holder.sanity.max_level += 20
+		holder.sanity.max_level += 35
 		if(!get_active_mutation(holder, MUTATION_OBORIN))
 			var/datum/mutation/M = new MUTATION_OBORIN
 			M.imprint(holder)
@@ -234,7 +234,7 @@
 
 /datum/perk/fate/oborin_syndrome/remove()
 	if(holder)
-		holder.sanity.max_level -= 20
+		holder.sanity.max_level -= 35
 		var/datum/mutation/M = get_active_mutation(holder, MUTATION_OBORIN)
 		M?.cleanse(holder)
 		spawn(1)
@@ -245,13 +245,13 @@
 	name = "Lowborn"
 	icon_state = "ladder" //https://game-icons.net/1x1/delapouite/hole-ladder.html
 	desc = "You are the bottom of society. The dirt and grime on the heel of a boot. You had one chance. You took it. \
-			You cannot be a person of authority. Additionally, you have the ability to have a name without a last name and have an increased sanity pool."
+			You cannot be a person of authority. Additionally, you have the ability to have a name without a last name and have an increased willpower pool."
 
 /datum/perk/fate/lowborn/assign(mob/living/carbon/human/H)
 	if(..())
-		holder.sanity.max_level += 10
+		holder.sanity.max_level += 25
 
 /datum/perk/fate/lowborn/remove()
 	if(holder)
-		holder.sanity.max_level -= 10
+		holder.sanity.max_level -= 25
 	..()

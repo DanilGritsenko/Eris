@@ -45,10 +45,10 @@
 	var/flags
 	var/mob/living/carbon/human/owner
 
-	var/sanity_passive_gain_multiplier = 1
+	var/sanity_passive_gain_multiplier = 2.5
 	var/sanity_invulnerability = 0
 	var/level
-	var/max_level = 100
+	var/max_level = 175
 	var/level_change = 0
 
 	var/insight
@@ -68,7 +68,7 @@
 	var/negative_prob = 30
 
 	var/view_damage_threshold = 20
-	var/environment_cap_coeff = 1 //How much we are affected by environmental cognitohazards. Multiplies the above threshold
+	var/environment_cap_coeff = 1.5 //How much we are affected by environmental cognitohazards. Multiplies the above threshold
 
 	var/say_time = 0
 	var/breakdown_time = 0

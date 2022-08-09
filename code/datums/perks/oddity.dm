@@ -22,7 +22,7 @@
 /datum/perk/oddity/terrible_fate
 	name = "Terrible Fate"
 	desc = "You realize the painful truth of death. You don't want to die and despise death - dying is a unmistakable horror to you. \
-			Anyone who is around you at the moment of your death must roll a Vigilance sanity check. If they fail, their sanity will instantly be dropped to 0."
+			Anyone who is around you at the moment of your death must roll a Vigilance willpower check. If they fail, their willpower will instantly be dropped to 0."
 	icon_state = "murder" // https://game-icons.net/1x1/delapouite/chalk-outline-murder.html
 
 /datum/perk/oddity/unfinished_delivery
@@ -77,7 +77,7 @@
 /datum/perk/oddity/charming_personality
 	name = "Charming Personality"
 	desc = "A little wink and a confident smile goes far in this place. People are more comfortable with your company. \
-			They will recover sanity around you."
+			They will recover willpower around you."
 	icon_state = "flowers" // https://game-icons.net/1x1/lorc/flowers.html
 
 /datum/perk/oddity/charming_personality/assign(mob/living/carbon/human/H)
@@ -92,7 +92,7 @@
 /datum/perk/oddity/horrible_deeds
 	name = "Horrible Deeds"
 	desc = "The itch. The blood. They see the truth in your actions and are horrified. \
-			People around you lose sanity."
+			People around you lose willpower."
 	icon_state = "bad_breath" // https://game-icons.net
 
 /datum/perk/oddity/horrible_deeds/assign(mob/living/carbon/human/H)
@@ -107,7 +107,7 @@
 /datum/perk/oddity/chaingun_smoker
 	name = "Chaingun Smoker"
 	desc = "The cigarette is your way of life. It makes you feel less sick and tougher when you chomp down on cigars. \
-			You heal a slight amount by smoking and recover sanity more quickly."
+			You heal a slight amount by smoking and recover willpower more quickly."
 	icon_state = "cigarette" // https://game-icons.net
 
 /datum/perk/oddity/nightcrawler

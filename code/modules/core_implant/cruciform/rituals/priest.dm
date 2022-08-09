@@ -344,25 +344,32 @@
 	return FALSE
 
 /datum/ritual/cruciform/priest/offering/call_for_arms
-	name = "Call for arms"
+	name = "Call for Arms"
 	phrase = "Pater da mihi fortitudinem cladem ad malum."
 	desc = "Ask the Eye of the Protector to give you weapons to fight evil. You must offer 40 metal, 20 plasteel and 150 biomatter."
 	req_offerings = list(/obj/item/stack/material/plasteel = 20, /obj/item/stack/material/steel = 40, /obj/item/stack/material/biomatter = 150)
 	miracles = list(ARMAMENTS)
 
 /datum/ritual/cruciform/priest/offering/divine_intervention
-	name = "Divine intervention"
+	name = "Divine Intervention"
 	phrase = "Auxilium instaurarent domum tuam."
 	desc = "Requests the Eye of the Protector for construction materials. You must offer 200 biomatter."
 	req_offerings = list(/obj/item/stack/material/biomatter = 200)
 	miracles = list(MATERIAL_REWARD)
 
 /datum/ritual/cruciform/priest/offering/holy_guidance
-	name = "Holy guidance"
-	phrase = "Domine deus, lux via"
-	desc = "Present your prayers to the Eye of the Protector. You must offer an oddity and 40 fruits."
-	req_offerings = list(/obj/item/oddity = 1, /obj/item/reagent_containers/food/snacks/grown = 40)
+	name = "Holy Guidance"
+	phrase = "Domine deus, lux via."
+	desc = "Present your prayers to the Eye of the Protector. You must offer 80 fruits."
+	req_offerings = list(/obj/item/reagent_containers/food/snacks/grown = 80)
 	miracles = list(ALERT, INSPIRATION, ODDITY, STAT_BUFF, ENERGY_REWARD)
+	
+/datum/ritual/cruciform/priest/offering/angels_blessing
+	name = "Angels Blessing"
+	phrase = "Angele, da mihi bene dictionem tuam."
+	desc = "Gather an oddity for the Eye of the Protector to exchange for an angels one. You must offer an oddity and 200 biomatter."
+	req_offerings = list(/obj/item/oddity = 1, /obj/item/stack/material/biomatter = 200)
+	miracles = list(ODDITY)
 
 /datum/ritual/cruciform/priest/divine_blessing
 	name = "Divine Blessing"

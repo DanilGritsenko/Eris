@@ -1,6 +1,6 @@
 /mob/living/simple_animal/hostile/creature
 	name = "creature"
-	desc = "A sanity-destroying otherthing."
+	desc = "A willpower-destroying otherthing."
 	icon = 'icons/mob/critter.dmi'
 	speak_emote = list("gibbers")
 	icon_state = "otherthing"

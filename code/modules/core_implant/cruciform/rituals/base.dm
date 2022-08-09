@@ -124,7 +124,7 @@
 /datum/ritual/cruciform/base/revelation
 	name = "Revelation"
 	phrase = "Patris ostendere viam"
-	desc = "A person close to you will have a vision that could increase ther sanity... or that's what you hope will happen."
+	desc = "A person close to you will have a vision that could increase ther willpower... or that's what you hope will happen."
 	power = 10
 
 /datum/ritual/cruciform/base/revelation/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C)

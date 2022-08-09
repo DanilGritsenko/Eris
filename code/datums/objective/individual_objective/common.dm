@@ -22,7 +22,7 @@
 
 /datum/individual_objective/inspiration
 	name = "Triumph of the Spirit"
-	desc =  "Observer at least one positive breakdown. Inspiring!"
+	desc =  "Observer at least one positive curse. Inspiring!"
 	var/breakdown_type = /datum/breakdown/positive
 
 /datum/individual_objective/inspiration/assign()
@@ -54,7 +54,7 @@
 	..()
 	var/list/valid_targets = (GLOB.player_list & GLOB.living_mob_list & GLOB.human_mob_list) - mind_holder
 	target = pick(valid_targets)
-	desc = "[target] really pisses you off, ensure that they will get a mental breakdown."
+	desc = "[target] really pisses you off, ensure that they will lose their willpower."
 	RegisterSignal(mind_holder, COMSIG_HUMAN_BREAKDOWN, .proc/task_completed)
 
 /datum/individual_objective/derange/task_completed(mob/living/L, datum/breakdown/breakdown)
@@ -180,8 +180,8 @@
 	..()
 	var/list/valid_targets = (GLOB.player_list & GLOB.living_mob_list & GLOB.human_mob_list) - mind_holder
 	target = pick(valid_targets)
-	desc = "Ensure that [target] will not get their sanity lowered to [sanity_threshold] and below \
-			for [unit2time(units_requested)] minutes. Timer resets if sanity reaches the threshold."
+	desc = "Ensure that [target] will not get their willpower lowered to [sanity_threshold] and below \
+			for [unit2time(units_requested)] minutes. Timer resets if willpower reaches the threshold."
 	timer = world.time
 	RegisterSignal(target, COMSIG_HUMAN_SANITY, .proc/task_completed)
 

@@ -138,7 +138,7 @@
 
 /datum/uplink_item/item/tools/mind_fryer
 	name = "Mind Fryer"
-	desc = "When activated, attacks the minds of people nearby, causing sanity loss and inducing mental breakdowns. \
+	desc = "When activated, attacks the minds of people nearby, causing willpower loss and inducing curses. \
 			The device owner is immune to this effect."
 	item_cost = 2
 	path = /obj/item/device/mind_fryer
@@ -378,7 +378,7 @@
 
 /datum/uplink_item/item/tools/mindreader
 	name = "Mindreader"
-	desc = "Place on your victim's head to extract memories from their brain after a mental breakdown."
+	desc = "Place on your victim's head to extract memories from their brain after a curse."
 	item_cost = 20
 	antag_roles = list(ROLE_CONTRACTOR,ROLE_MARSHAL,ROLE_INQUISITOR,ROLE_MERCENARY,ROLE_CARRION)
 	path = /obj/item/clothing/head/mindreader

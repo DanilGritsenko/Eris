@@ -43,7 +43,7 @@
 		return
 	..()
 
-/mob/living/carbon/human/say(message, datum/language/speaking)
+/mob/living/carbon/human/say(var/message)
 	if(language_blackout)
 		to_chat(src, get_language_blackout_message())
 		return FALSE
@@ -125,8 +125,8 @@
 	if(istype(back, /obj/item/rig))
 		var/obj/item/rig/rig = back
 		// todo: fix this shit
-		if(rig.speech && rig.speech.voice_holder && rig.speech.voice_holder.active && rig.speech.voice_holder.voice_name)
-			voice_sub = rig.speech.voice_holder.voice_name
+		if(rig.speech && rig.speech.voice_holder && rig.speech.voice_holder.active && rig.speech.voice_holder.voice)
+			voice_sub = rig.speech.voice_holder.voice
 	else
 		if(mask_check && wear_mask)
 			var/obj/item/clothing/mask/mask = wear_mask
@@ -136,8 +136,8 @@
 			if(!gear)
 				continue
 			var/obj/item/voice_changer/changer = locate() in gear
-			if(changer && changer.active && changer.voice_name)
-				voice_sub = changer.voice_name
+			if(changer && changer.active && changer.voice)
+				voice_sub = changer.voice
 	if(voice_sub)
 		return voice_sub
 	if(GetSpecialVoice())

@@ -157,8 +157,8 @@
 		bullet = 20,
 		energy = 20,
 		bomb = 0,
-		bio = 50,  //same as labcoats at LEAST
-		rad = 0
+		bio = 100,  //same as labcoats at LEAST
+		rad = 75,
 	)
 
 /obj/item/clothing/suit/storage/neotheosports

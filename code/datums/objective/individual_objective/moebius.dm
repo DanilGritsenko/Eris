@@ -50,7 +50,7 @@
 /datum/individual_objective/derail/assign()
 	..()
 	units_requested = rand(3,4)
-	desc = "Observe a sum of [units_requested] mental breakdowns of you, orother non people."
+	desc = "Observe a sum of [units_requested] curses of you, or other non people."
 	RegisterSignal(mind_holder, COMSIG_HUMAN_BREAKDOWN, .proc/task_completed)
 
 /datum/individual_objective/derail/task_completed(mob/living/L, datum/breakdown/breakdown)

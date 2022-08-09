@@ -235,7 +235,7 @@
 
 /datum/stat/aiming
 	name = STAT_VIG
-	desc = "Here, paranoia is nothing but a useful trait. Improves your ability to control recoil on guns, helps you resist insanity."
+	desc = "Here, paranoia is nothing but a useful trait. Improves your ability to control recoil on guns, steels your willpower."
 
 // Use to perform stat checks
 /mob/proc/stat_check(stat_path, needed)

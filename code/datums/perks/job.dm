@@ -1,7 +1,7 @@
 /datum/perk/survivor
 	name = "Survivor"
 	desc = "After seeing the death of many acquaintances and friends, witnessing death doesn't shock you as much as before. \
-			Halves sanity loss from seeing people die."
+			Halves willpower loss from seeing people die."
 	icon_state = "survivor" // https://game-icons.net/1x1/lorc/one-eyed.html
 
 /datum/perk/survivor/assign(mob/living/carbon/human/H)
@@ -77,7 +77,7 @@
 /datum/perk/vagabond
 	name = "Vagabond"
 	desc = "You're used to see the worst sight the world has to offer. Your mind feels more resistant. \
-			This perk reduces the total sanity damage you can take from what is happening around you."
+			This perk reduces the total willpower damage you can take from what is happening around you."
 	icon_state = "vagabond" // https://game-icons.net/1x1/lorc/eye-shield.html
 
 /datum/perk/vagabond/assign(mob/living/carbon/human/H)
@@ -164,7 +164,7 @@
 
 /datum/perk/sanityboost
 	name = "True Faith"
-	desc = "When near an obelisk, you feel your mind at ease. Your sanity regeneration is boosted."
+	desc = "When near an obelisk, you feel your mind at ease. Your willpower regeneration is boosted."
 	icon_state = "sanityboost" // https://game-icons.net/1x1/lorc/templar-eye.html
 
 /datum/perk/active_sanityboost
@@ -209,8 +209,8 @@
 /datum/perk/neat
 	name = "Neat"
 	desc = "You're used to see blood and filth in all its forms. Your motto: a clean ship is the first step to enlightenment. \
-			This perk reduces the total sanity damage you can take from what is happening around you. \
-			You can regain sanity by cleaning."
+			This perk reduces the total willpower damage you can take from what is happening around you. \
+			You can regain willpower by cleaning."
 	icon_state = "neat" // https://game-icons.net/1x1/delapouite/broom.html
 
 /datum/perk/neat/assign(mob/living/carbon/human/H)
@@ -225,7 +225,7 @@
 /datum/perk/greenthumb
 	name = "Green Thumb"
 	desc = "After growing plants for years you have become a botanical expert. You can get all information about plants, from stats \
-	        to harvest reagents, by examining them. Gathering plants relaxes you and thus restores sanity."
+	        to harvest reagents, by examining them. Gathering plants relaxes you and thus restores willpower."
 	icon_state = "greenthumb" // https://game-icons.net/1x1/delapouite/farmer.html
 
 	var/obj/item/device/scanner/plant/virtual_scanner = new
@@ -236,7 +236,7 @@
 
 /datum/perk/job/club
 	name = "Raising the bar"
-	desc = "You know how to mix drinks and change lives. People near you recover sanity."
+	desc = "You know how to mix drinks and change lives. People near you recover willpower."
 	icon_state = "inspiration"
 
 /datum/perk/job/club/assign(mob/living/carbon/human/H)

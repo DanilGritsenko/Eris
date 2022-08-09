@@ -25,7 +25,7 @@
 
 	init_firemodes = list(
 		FULL_AUTO_400,
-		SEMI_AUTO_300,
+		SEMI_AUTO_NODELAY,
 		)
 
 /obj/item/gun/projectile/automatic/atreides/update_icon()

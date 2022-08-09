@@ -1,5 +1,5 @@
-// Ship voidsuits
-//Engineering void
+// Station voidsuits
+//Engineering rig
 /obj/item/clothing/head/space/void/engineering
 	name = "Technomancer voidsuit helmet"
 	desc = "A special helmet designed for work in a hazardous, low-pressure environment. Has radiation shielding."
@@ -49,7 +49,7 @@
 	accompanying_object = null
 	spawn_blacklisted = TRUE
 
-//Old engineering void
+//Old engineering rig
 /obj/item/clothing/head/space/void/engineeringold
 	name = "outdated Technomancer voidsuit helmet"
 	desc = "This visor has a few more options in its shape than its more newer version."
@@ -404,7 +404,7 @@
 		energy = 30,
 		bomb = 25,
 		bio = 100,
-		rad = 5
+		rad = 0
 	)
 	light_overlay = "helmet_light_dual"
 	siemens_coefficient = 0.8
@@ -421,7 +421,7 @@
 		energy = 30,
 		bomb = 25,
 		bio = 100,
-		rad = 5
+		rad = 0
 	)
 	siemens_coefficient = 0.8
 	helmet = /obj/item/clothing/head/space/void/riggedvoidsuit
@@ -437,9 +437,9 @@
 	action_button_name = "Toggle Helmet Light"
 	flags_inv = BLOCKHAIR
 	armor = list(
-		melee = 50,
-		bullet = 45,
-		energy = 45,
+		melee = 40,
+		bullet = 40,
+		energy = 40,
 		bomb = 30,
 		bio = 100,
 		rad = 50
@@ -457,9 +457,9 @@
 	slowdown = 0.3
 	flags_inv = HIDEGLOVES|HIDEJUMPSUIT|HIDETAIL
 	armor = list(
-	    melee = 50,
-		bullet = 45,
-		energy = 45,
+	    melee = 40,
+		bullet = 40,
+		energy = 40,
 		bomb = 30,
 		bio = 100,
 		rad = 50

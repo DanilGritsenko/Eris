@@ -148,7 +148,7 @@
 				var/atom/A = host
 				if(istype(A))
 					affected_zlevels = GetConnectedZlevels(A.z)
-				crew_announcement.Announce(input, zlevels = affected_zlevels, use_text_to_speech = TRUE)
+				crew_announcement.Announce(input, zlevels = affected_zlevels)
 				announcment_cooldown = 1
 				spawn(600)//One minute cooldown
 					announcment_cooldown = 0

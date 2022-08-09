@@ -24,7 +24,7 @@
 
 	init_firemodes = list(
 		FULL_AUTO_600,
-		SEMI_AUTO_300
+		SEMI_AUTO_NODELAY
 		)
 
 	wield_delay = 0 // Super weak SMG
